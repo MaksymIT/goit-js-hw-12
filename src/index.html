@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+      <form class="feedback-form js-feedback-form search-container" autocomplete="off">
+        <label>
+          Searh
+          <input type="search" class="feedback-form-input" name="user_query" autofocus />
+        </label>
+        <button class="feedback-form-submit" type="submit">Submit</button>
+      </form>
+      
+      <div class="container">
+        <ul class="galerry-js"></ul>
+      </div>
+      
+      <span class="loader hidden"></span>
 
-    <load src="./partials/footer.html" />
+      <div class="galerry-js"></div>
+      <button class="load-more hidden">Load more</button>
+
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>

@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px; 
+  width: 60%;
+  max-width: 500px;
+}
+
+.feedback-form-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.feedback-form-submit {
+  background-color: #4E75FF; 
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  margin-top: auto;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form-submit:hover {
+  background-color: #6C8CFF;
+}
+
+.feedback-form-input::placeholder {
+  color: #888;
+}
+
+
+
+/* Стилі для кнопки "Load more" */
+.load-more {
+    background-color: #4E75FF;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.load-more:hover {
+    background-color: #6C8CFF;
+    border-color: #bbb;
+}
+
+.hidden {
+    display: none;
+}
